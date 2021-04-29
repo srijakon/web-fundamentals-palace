@@ -2,53 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Web Fundamentals Palace</title>
+  <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
- <header>
-   <!-- end / function key and right arrow on mac- > end of line -->
-   <h1> The Web Fundamentals Palace
-   </h1>
-   <p>Hover over the family members below and take a peek into the lives of  those living at the Web fundamentals palace.</p>
- </header> 
- <main>
-  <section id="king-and-queen">
-    <div>
-      <h2>King Kieran</h2>
-      <img src="./images/king.jpg" alt="King Kieren">
-      <p>
-        My name is Kieran and Iam the King. I like karate and kitesurfing. My son <a href="">Peter</a> is the heir to the throne.
-      </p>
-    </div>
-    <div>
-      <h2>Queen Queenie</h2>
-      <img src="./images/queen.jpg" alt="Queen Queenie">
-      <p>
-        My name is Queenie and Iam the Queen. I like quizzes and quiche. Click here to see my favourite <a href=""></a>quiche recipe.
-      </p>
-    </div>
-  </section id="Prince-and-Princess"> 
-  <div>
-    <h2>Prince Peter</h2>
-    <img src="./images/prince-peter.jpg" alt="Prince Peter">
-    <p>
-      My name is peter the prince. I like posing and pizza. Follow me on instagram <span>@pengprincepeter</p>span>
-    </p>
-  </div>
-  <div>
-    <h2>Princess Penelope</h2>
-    <img src="./images/princess-penelope.jpg" alt="Princess Penelope">
-    <p>
-      My name is penelope the Princess. I like lots of things... </p>
-      <ul id='penelope-list'>
-       <li>Pencils</li>
-       <li>Peanut butter</li>
-      <li>Ponies</li>
-      <li>pogo sticks</li>
-    </ul>
-  </div>
- </main>
+  <header id="header">
+    <h1>The Web Fundamentals Palace</h1>
+    <p>Hover over the family members below and take a peak into the lives of those living at Web Fundamentals Palace.</p>
+  </header>
+  <main>
+    <section id="king-and-queen">
+      <div class="card">
+        <h2>King Kieran</h2>
+        <img src="./images/king.jpg" alt="King Kieran">
+        <p>My name is Kieran and I am the King. I like karate and kitesurfing. My son <a href="#peter">Peter</a> is the heir to the throne.</p>
+      </div>
+      <div class="card">
+        <h3>Queen Queenie</h3>
+        <img src="./images/queen.jpg" alt="Queen Queenie">
+        <p>
+          My name is Queenie and I am the Queen. I like quizzes and quiche. 
+          Click here to see my favourite quiche recipe.
+          <a href="https://www.bbc.co.uk/food/recipes/quichelorraine_71987" target="blank"></a>
+        </p>
+      </div>
+    </section>
+    <section id="children">
+      <div class="card">
+        <h4 id="peter">Prince Peter</h4>
+        <img src="./images/prince-peter.jpg" alt="Prince Peter">
+        <p>My name is Peter the Prince. I like posing and pizza. Follow me on instagram <span>@pengprincepeter</span> </p>
+      </div>
+      <div class="card">
+        <h5>Princess Penelope</h5>
+        <img src="./images/princess-penelope.jpg" alt="Princess Penelope">
+        <p>My name is Penelope the Princess. I like lots of things...</p>
+        <ul id='penelope-list'>
+          <li>Pencils</li>
+          <li>Peanut Butter</li>
+          <li>Ponies</li>
+          <li>Pogo sticks</li>
+        </ul>
+      </div>
+    </section>
+    <section id="susan">
+      <div class="card">
+        <h6>Susan</h6>
+        <img src="./images/susan.jpg" alt="Scullery maid">
+        <p>I am King Kieran's Mistress and Mother to the illigitimate Princess</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="#header">Back to Top</a>
+  </footer>
 </body>
 </html>
