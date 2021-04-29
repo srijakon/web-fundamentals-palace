@@ -1,0 +1,82 @@
+/* specificity */
+/* global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* box-sizing : contentbox -> width + padding + margin + border */
+/* border box -> width = width + padds */
+
+/*
+#id -> USE A HASHTAG WITH ID'S
+.classes -> USE A DOT WITH CLASSES 
+selector {
+  CSS DECLARATIONS
+  PROPERTY : VALUE ;
+}
+ */
+ body {
+   font-family: sans-serif;
+   /* SETTING A LIMIT TO HOW FAR IT CAN GO */
+   width: 1400px;
+   margin: auto; 
+ }
+ header {
+   text-align:  center;
+   /* SETTING A FIXED HEIGHT */
+ padding:40px ;
+   /*  */
+   color: rgb(91, 89, 87);
+ }
+h1 {
+  font-size: 200px;
+}
+/* BELOW IS MORE SPECIFIC */
+ header h1 {
+   font-size: 40px;
+ }
+ .card {
+   width: 300px;
+   height: auto;
+   border: 5px solid gray;
+   border-radius: 5px;
+   /* text align with the images */
+   text-align: center;
+   /* hex code/ */
+   background-color: #eee;
+   color: midnightblue;
+   padding: 20px;
+   /* opacity 0 to 1 */
+   opacity: 0.5 ;
+ }
+.card :hover {
+opacity: 1;
+}
+/* .card dic {
+  min-height :300px;
+   */
+
+ .card img {
+   margin: 10px;
+  min-height: 300px;
+  border-radius: 5px;
+ }
+ /* chain elements together with , */
+  h2,
+  h3,
+  h4,
+  h5, 
+  h6 {
+    text-decoration: underline;
+    font-size: 30px;
+  }
+  /* text id's # */
+  #penelope-list {
+    list-style-type: none;
+  }
+a,
+a:active,
+a:visited {
+  color: brown;
+}
